@@ -6,14 +6,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  tasks = [
-    { id: '1', title: 'Learn JavaScript', completed: false },
-    { id: '2', title: 'Buy a Unicorn', completed: false },
-    { id: '3', title: 'Make Dinner', completed: false },
-  ];
-  
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
 
+  }
 }

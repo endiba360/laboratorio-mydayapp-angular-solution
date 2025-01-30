@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Task {
   id: string;
@@ -11,5 +11,12 @@ interface Task {
   templateUrl: './task-list.component.html',
 })
 export class TaskListComponent {
-  @Input() tasks: Task[] = [];
+  tasks: Task[] = [];
+  ngOnInit() {
+    this.tasks = [
+      { id: '1', title: 'Learn JavaScript', completed: false },
+      { id: '2', title: 'Buy a Unicorn', completed: false },
+      { id: '3', title: 'Make Dinner', completed: false },
+    ];
+  }
 }
