@@ -1,10 +1,5 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
-
-interface Task {
-  id: string;
-  title: string;
-  completed: boolean;
-}
+import { Task } from 'src/app/models/task.model';
 
 @Component({
   selector: 'app-task-input',
